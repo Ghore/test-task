@@ -1,0 +1,97 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: $background-1;
+}
+
+.headerWrapperDesktop {
+    display: none;
+}
+
+.headerWrapperMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerLogo {
+    width: 135px;
+    height: 42px;
+}
+
+.burgerMenu {
+    width: 20px;
+    height: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 330px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 718px;
+    }
+
+    .headerWrapperMobile {
+        padding-bottom: 18px;
+    }
+
+    .headerLogo {
+        width: 135px;
+        height: 60px;
+    }
+
+    .burgerMenu {
+        width: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 964px;
+    }
+
+    .headerWrapperMobile {
+        display: none;
+    }
+
+    .headerWrapperDesktop {
+        width: 971px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .headerLogo {
+        width: 134px;
+    //    padding-left: 30px;
+    }
+
+    .includedList {
+        width: 467px;
+        display: flex;
+        justify-content: space-between;
+        font-family: $font-openSans;
+        font-size: 14px;
+        line-height: 24px;
+   
+    }
+
+    .includedListItem {
+        @include font-settings(14px, 60px, 400);
+        font-family: $font-openSans;
+
+    }
+
+
+
+
+}

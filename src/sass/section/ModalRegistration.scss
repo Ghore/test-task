@@ -1,0 +1,75 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+
+.wrap {
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    height: 100%;
+    background: $four-color;
+    display: flex;
+    align-items: center;
+}
+
+.modalRegistration {
+    width: 362px;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.modalRegistration {
+
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+}
+
+.topWrapper {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.titleModal {
+    padding-top: 24px;
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+}
+
+.closeModal {
+    background-color: inherit;
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+}
+
+
+
+.descriptionModal {
+
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    border-bottom: 1px solid $four-color;
+    border-top: 1px solid $four-color;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.greatModal {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    width: 102px;
+    height: 38px;
+    background-color: $primary-color;
+    color: $background-1;
+    position: relative;
+    left: 10px;
+
+}

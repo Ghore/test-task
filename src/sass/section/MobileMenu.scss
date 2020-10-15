@@ -1,0 +1,71 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+.mobileMenu {
+    position: absolute;
+    top: 7vh;
+    left: -20px;
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.firstList {
+    @include font-settings(16px, 24px, 400);
+    color: $third-color;
+    font-family: $font-openSans;
+    border-bottom: 1px solid $four-color;
+    border-top: 1px solid $four-color;
+    
+}
+
+.firstListItem {
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+.firstListItem:first-child {
+    padding-top: 16px;
+}
+
+.secondList {
+    @include font-settings(16px, 24px, 400);
+    color: $third-color;
+    font-family: $font-openSans;
+    border-bottom: 1px solid $four-color;
+
+}
+
+.secondListItem {
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+.secondListItem:first-child {
+    padding-top: 14px;
+}
+
+.thirdList {
+    @include font-settings(16px, 24px, 400);
+    color: $third-color;
+    font-family: $font-openSans;
+
+
+}
+
+.thirdListItem {
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+.thirdListItem:first-child {
+    padding-top: 14px;
+}
+
+.thirdListItem:last-child{
+    padding-bottom: 0px;
+}

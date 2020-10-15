@@ -1,0 +1,167 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+.container {
+    margin: 0 auto;
+    width: 330px;
+}
+
+.fourSectionTitle {
+    @include font-settings(30px, 34px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    margin-top: 75px;
+    padding-bottom: 18px;
+}
+
+.attention {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.btnwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnSignUp {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    width: 210px;
+    height: 38px;
+    background-color: $primary-color;
+    border-radius: 5%;
+    color: white;
+}
+
+.nameInput {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    padding-bottom: 4px;
+}
+
+.input {
+    padding-left: 12px;
+    width: 330px;
+    height: 40px;
+}
+
+.inputListItem {
+    padding-bottom: 28px;
+}
+
+.inputListItem:last-child {
+    padding-bottom: 8px;
+
+}
+
+.PasswordInstruction {
+    @include font-settings(12px, 28px, 400);
+    font-family: $font-openSans;
+
+}
+
+
+.radioList {
+    display: flex;
+    // flex-wrap: nowrap;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.radioListItem {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.positionInWeb {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    padding-bottom: 10px;
+}
+
+.radioName {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    padding-left: 8px;
+}
+
+.positionFormPhoto {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    padding-bottom: 14px;
+}
+
+.inputPhoto {
+    width: 248px;
+    height: 36px;
+}
+
+.browse {
+    width: 82px;
+    height: 34px;
+}
+
+.InputPhotoWrapper {
+    padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+
+    .fourSectionTitle {
+        margin-top: 116px;
+        @include font-settings(40px, 34px, 400);
+        margin-bottom: 6px;
+    }
+
+    .attention {
+        @include font-settings(16px, 22px, 400);
+        font-family: $font-openSans;
+        width: 467px;
+        padding-bottom: 28px;
+    }
+    .container {
+        width: 708px;
+    }
+
+    .fourSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .userForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+    }
+
+    .input {
+        width: 464px;
+    }
+
+    .btnSignUp {
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1170px)  {
+    .container {
+        width: 964px;
+    }
+    .fourSectionTitle {
+        margin-top: 190px;
+        @include font-settings(50px, 54px, 400);
+    }
+}

@@ -1,0 +1,121 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+.firstSectionBackGround {
+    // width: 100%;
+    // margin-left: calc(-50vw + 50%);
+    background-image: url(../../assets/image/banner-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.firstSectionWrapper {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 74px;
+
+}
+
+
+.firstTitle {
+    @include font-settings(30px, 34px, 400);
+    color: $textcolor-1;
+    font-family: $font-openSans;
+    text-transform: uppercase;
+    padding-top: 68px;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 330px;
+}
+
+.reminderDescription {
+    @include font-settings(16px, 24px, 400);
+    color: $textcolor-1;
+    font-family: $font-openSans;
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 23px;
+    word-spacing: 2px;
+}
+
+
+.btnSign {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    width: 210px;
+    height: 38px;
+    background-color: $primary-color;
+    border-radius: 5%;
+    color: $background-1;
+    word-spacing: 6px;
+}
+
+@media (min-width: 768px) {
+    
+    .container {
+        width: 708px;
+    }
+
+
+
+    .firstSectionWrapper {
+        align-items: flex-start;
+        text-align: left;
+        padding-bottom: 65px;
+        padding-left: 0px;
+    
+    }
+
+    .reminderDescription {
+        text-align: left;
+        width: 462px;
+        padding-bottom: 33px;
+        padding-top: 27px;
+        }
+
+    .firstTitle {
+        @include font-settings(40px, 44px, 400);
+        text-align: left;
+        width: 424px;
+        padding-top: 42px;
+      
+    }
+    .reminderDescription::after {
+        content: 'Please be patient, we consider and respond to every application that meets minimum requirements. We look forward to your submission. Good luck! The photo has to scale in the banner area on the different screens';
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1170px)  {
+    .container {
+        // width: 1170px;
+        width: 964px;
+    }
+
+
+    .firstSectionWrapper {
+        padding-bottom: 116px;
+    }
+
+    .firstTitle {
+        @include font-settings(50px, 54px, 400);
+        width: 548px;
+        padding-top: 107px;
+    }
+
+
+    .reminderDescription {
+        width: 550px;
+        padding-top: 25px;
+        padding-bottom: 34px;
+    }
+
+}

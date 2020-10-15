@@ -1,0 +1,148 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+.secondSection {
+    margin-top: 68px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 330px;
+}
+
+
+.secondTittle {
+    @include font-settings(30px, 50px, 400);
+    font-family: $font-openSans;
+    color: rgb(33, 37, 41);
+    text-align: center;
+    padding-bottom: 14px;
+
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.contentWrapperImage {
+    background-image: url(../../assets/image/manOpti.svg);
+    background-size: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 290px;
+    height: 270px;
+
+}
+
+.man {
+    width: 292px;
+    height: 256px;
+}
+
+
+.aboutTestTitle {
+    @include font-settings(24px, 29px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    padding-bottom: 18px;
+    padding-top: 22px;
+}
+
+.aboutTestDescription {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    padding-bottom: 27px;
+
+}
+
+.SingUpLink {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    color: $primary-color;
+    padding-left: 118px;
+
+}
+
+.SingUpLink:hover {
+    background-color: $primary-color;
+    color: $background-1;
+
+}
+
+@media (min-width: 768px) {
+    .secondSection {
+        margin-top: 111px;
+    }
+
+    .container {
+        width: 708px;
+    }
+
+
+    .contentWrapper {
+        flex-direction: row;
+    }
+
+    .secondTittle {
+        @include font-settings(40px, 50px, 400);
+        padding-bottom: 42px;
+    }
+
+    .contentWrapperImage {
+        position: relative;
+        bottom: 38px;
+        width: 464px;
+        height: 210px;
+    }
+
+    .contentWrapperText {
+        // padding-left: 32px;
+    }
+
+    .aboutTestTitle {
+        @include font-settings(24px, 30px, 400);
+        text-align: left;
+    }
+
+    .aboutTestDescription {
+        text-align: left;
+        padding-bottom: 40px;
+    }
+
+    .SingUpLink {
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1170px) {
+    .secondSection {
+        margin-top: 152px;
+    }
+
+    .container {
+        width: 964px;
+    }
+
+    .secondTittle {
+        @include font-settings(50px, 50px, 400);
+        width: 1024px;
+        text-align: center;
+        padding-bottom: 48px;
+    }
+
+    .contentWrapperImage {
+        width: 747px;
+    }
+    .contentWrapperText {
+        padding-left: 0px;
+    }
+    .aboutTestDescription {
+        word-spacing: 0px;
+        padding-bottom: 27px;
+    }
+}

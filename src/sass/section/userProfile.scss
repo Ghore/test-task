@@ -1,0 +1,109 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+
+.userCard {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    padding-bottom:21px;
+}
+
+
+.userCardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+    height: 200px;
+    width: 200px;
+}
+
+.userCardItem{
+    margin-bottom: 60px;
+}
+
+
+.avatar { 
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    
+}
+
+.userName {
+    @include font-settings(24px, 29px, 400);
+    font-family: $font-openSans;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+.position {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    color: $third-color;
+    margin-bottom: 12px;
+
+}
+
+.userEmail {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    color: $third-color;
+    margin-bottom: 12px;
+
+}
+
+.userTel {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    color: $third-color;
+
+}
+
+@media screen and (min-width: 768px) {
+    .userCard{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 680px;
+        padding-bottom: 40px;
+    }
+
+    .userName {
+
+        margin-top: 17px;
+        margin-bottom: 12px;
+    }
+
+    .position {
+  
+        margin-bottom: 12px;
+    
+    }
+    .userEmail {
+
+        margin-bottom: 12px;
+    
+    }
+    .userCardItem:nth-child(-n + 3){
+        margin-bottom: 134px;
+    }
+    
+  }
+
+  @media (min-width: 1024px) and (max-width: 1170px) {
+
+    .userCard{
+        padding-bottom: 28px;
+        width: 860px;
+    }
+    .userCardItem:nth-child(-n + 3){
+        width: 226px;
+        margin-bottom: 134px;
+    }
+
+//    .userCardItem:nth-last-child(-3n){
+//     margin-bottom: 0px;
+//    }
+  }

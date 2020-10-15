@@ -1,0 +1,89 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 148px;
+}
+
+.thirdSectionBackground {
+    width: 100%;
+    background-color: $background-2;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.thirdSectionTextWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.thirdSectionTitle {
+    @include font-settings(30px, 34px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.attentionThird {
+    @include font-settings(16px, 22px, 400);
+    font-family: $font-openSans;
+    text-align: center;
+    padding-bottom: 38px;
+}
+
+.btnShowMore {
+    @include font-settings(16px, 24px, 400);
+    font-family: $font-openSans;
+    width: 210px;
+    height: 38px;
+    background-color: $primary-color;
+    border-radius: 5%;
+    color: $background-1;
+    align-items: center;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 330px;
+}
+
+
+@media (min-width: 768px) {
+    .thirdSectionBackground {
+        padding-bottom: 120px;
+    }
+
+    .thirdSection {
+        margin-top: 228px;
+    }
+
+    .thirdSectionTitle {
+        @include font-settings(40px, 44px, 400);
+        padding-bottom: 19px;
+    }
+
+    .container {
+        width: 708px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1170px) {
+    .thirdSection {
+        margin-top: 305px;
+    }
+
+    .thirdSectionTitle {
+        @include font-settings(50px, 54px, 400);
+    }
+
+    .container {
+        width: 964px;
+    }
+}
